@@ -6,7 +6,9 @@ body {
   color: #ffffff;
   z-index: 0;
 }
-
+h1, h2, h3, h4, h5, h6 {
+	color: #ffffff;
+}
 /*div {
 	border: 1px solid red;
 }*/
@@ -63,7 +65,7 @@ video {
 }
 .main-footer h6 {
 	text-align: left;
-	text-decoration: underline;
+	text-decoration: none;
 	color: #ffffff;
 }
 .main-footer img {
@@ -89,4 +91,9 @@ video {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+}
+.round-corners-3 {
+	-moz-border-radius: 10px 0 10px 10px;
+	-webkit-border-radius: 10px 0 10px 10px;
+	border-radius: 10px 0 10px 10px;
 }

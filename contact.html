@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F5 Band</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
 	<link rel="stylesheet" href="stylesheets/global.css" />
+	<link rel="stylesheet" href="stylesheets/contact.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -22,18 +23,52 @@
 		  </div> <!-- END row -->
 		  <br><br><br><br>
 		  <div class="row">
-			  <div class="large-11 large-centered columns">
-				  <video class="round-corners" height="480" poster="images/splash_720.png" controls preload>
-					  <source src="images/video/F5_vid_480.m4v">
-					  <source src="images/video/F5_vid_480.ogg">
-					  Your browser doesn't support embedded video!	  
-				  </video>
+			  <div class="large-9 large-centered columns">
+				  <div class="contact">
+					  <h1>Contact/Booking</h1>
+					  <p>For general booking information contact: Mitch Rossell •
+						  <a href="tel:7274583438">(727) 458-3428</a>
+					  </p>
+					  <div class="panel round-corners">
+					    <h2>Contact Form</h2>
+	  					<form id="contact_form" action="" method="post" data-abide>
+	  						<fieldset>
+	  							<label for="name">Your Name <em>*</em></label>
+	  							<input id="name" name="name" type="text" autofocus required class="required"><br />
+	  							<label for="telephone">Telephone (optional)</label>
+	  							<input id="telephone" name="telephone" type="text" placeholder="(xxx) xxx-xxxx"><br />
+	  							<label for="email">Email <em>*</em></label>
+	  							<input id="email" name="email" type="text" required class="required email"><br />
+								<div class="row">
+									<div class="small-6 columns">
+			  							<label for="inquiry_type">Requested info (Select)</label>
+			  							<select id="inquiry_type" name="inquiry_type">
+			  								<option value="wedding">Wedding</option>
+			  								<option value="event_other">Event</option>
+			  								<option value="general">General Info</option>
+			  							</select>
+									</div>
+									<div class="small-6 columns date-section pull-1">
+										<label for="date">Event date</label>
+										<input id="date-picker" name="date" type="text">
+									</div>
+								</div>
+	  							<label for="comments">Please Tell Us About Your Event ...</label>
+	  							<textarea id="comments" name="comments" placeholder="..."></textarea>
+	  							<label for="question">Security Question <em>*</em></label>
+	  							<input required id="question" name="question" type="text" placeholder="What is 3 + 9 ?">
+	  						</fieldset>
+	  						<!--<p><?php echo $caperror ?></p>-->
+	  						<p class="push_3 button tiny round"><input id="submit_button" type="submit" value="Send Us A Message"></p>
+	  					</form>
+					</div> <!-- END Panel -->
+				  </div>
 			  </div>
 		  </div> <!-- END row -->
 		  <br><br><br><br><br><br>
 		  <div class="row">
 			  <div class="small-12 small-centered columns">
-				  <a href="band.html"><img class="white-shadow" src="images/band/band_mock_3.png" alt="F5 Band collage" /></a>
+				  <!--<a href="band.html"><img class="white-shadow" src="images/band/band_mock_3.png" alt="F5 Band collage" /></a>-->
 			  </div>
 		  </div> <!-- END row -->
 		  
@@ -67,8 +102,8 @@
 						  <li><h6>BAND MEMBERS</h6></li>
 						  <li><a href="band.html"><img src="images/thumbs/band_mock_sm3_125.png" width="125"/></a></li>
 						  <li><a href="band.html">MEET THE BAND</a></li>
-						  <li><a href="contact.html">BOOKING</a></li>
-						  <li class="social-icon"><a href="#"><img src="images/logo/logo_8_40.png" /> HOME</a></li>
+						  <li><a href="#">BOOKING</a></li>
+						  <li class="social-icon"><a href="index.html"><img src="images/logo/logo_8_40.png" /> HOME</a></li>
 					  </ul>
 				  </div>
 				  <div class="large-4 small-3 columns footer-row-3">
@@ -85,8 +120,10 @@
 	  
       <script src="bower_components/jquery/jquery.js"></script>
       <script src="bower_components/foundation/js/foundation.min.js"></script>
+	  <script src="bower_components/foundation/js/foundation.abide.js"></script>
       <script src="js/app.js"></script>
 	  <script>
+	  	$(document).foundation();
 	  	/*$(document).ready(function() {
 	  	})*/
 	  </script>

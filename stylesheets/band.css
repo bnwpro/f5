@@ -1,0 +1,21 @@
+.bio {
+	clear: both;
+	height: auto;
+	padding-top: 50px;
+	
+}
+.bio-pic {
+	float: left;
+	width: 200px;
+	height: 350px;
+	margin-right: 15px;
+}
+.bio-pic-right {
+	float: right;
+	height: 225px;
+	margin-left: 10px;
+}
+.bio p {
+	font-size: large;
+	background: #111;
+}
