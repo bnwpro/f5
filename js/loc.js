@@ -1,0 +1,1 @@
+var contact_loc = "../sec/sub.php";
