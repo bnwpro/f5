@@ -18,7 +18,7 @@
 			  <div class="small-12 small-centered columns logo-div">
 				  <!--<h1 class="white-shadow">Foreman&rsquo;s 5 Band</h1>-->
 				  <!--<button type="button" id="logo_button">Switch Logo</button>-->
-				  <img src="images/logo/logo_8_250.png" class="home_logo" alt="F5-logo" />
+				  <a href="index.html"><img src="images/logo/logo_8_250.png" class="home_logo" alt="F5-logo" /></a>
 				  <!--<img src="images/logo/logo_7_sm_a.png"class="home_logo" alt="F5-logo" />-->
 			  </div>
 		  </div> <!-- END row -->
@@ -48,18 +48,18 @@
 							  </div>
 						  </div> <!-- END row -->
 						  <div class="row">
-							  <div class="small-6 columns">
+							  <div class="large-6 small-12 columns">
 								  <label for="email">Email <em>*</em></label>
 								  <input id="email" name="email" type="email" required class="required email">
 								  <small class="error">Please enter a valid email address</small>
 							  </div>
-							  <div class="small-6 columns">
+							  <div class="large-6 small-12 columns">
 								  <label for="telephone">Telephone (optional)</label>
 								  <input id="telephone" name="telephone" type="text" placeholder="(xxx) xxx-xxxx">
 							  </div>
 						  </div> <!-- END row -->
 						  <div class="row">
-							  <div class="small-6 columns">
+							  <div class="large-6 small-12 columns">
 								  <label for="inquiry_type">Type of event (Select)</label>
 								  <select id="inquiry_type" name="inquiry_type">
 									  <option value="Wedding">Wedding</option>
@@ -67,23 +67,23 @@
 									  <option value="General Information">General Info</option>
 								  </select>
 							  </div>
-							  <div class="small-6 columns">
+							  <div class="large-6 small-12 columns">
 								  <label for="event_date">Event date</label>
 								  <input id="date-picker" name="event_date" type="text">
 								  <span class="add-on"><i class="icon-th"></i></span>
 							  </div>
 						  </div> <!-- END row -->
 						  <div class="row">
-							  <div class="small-6 columns">
+							  <div class="large-6 small-12 columns">
 								  <label for="comments">Please Tell Us About Your Event...</label>
 								  <textarea id="comments" name="comments" placeholder="Description of event, questions..."></textarea>
 							  </div>
-							  <div class="small-6 columns">
+							  <div class="large-6 small-12 columns">
 								  <span id="success"></span>
 							  </div>
 						  </div> <!-- END row -->
 						  <div class="row">
-							  <div class="small-4 columns">
+							  <div class="large-4 small-12 columns">
 								  <label for="question">Security Question <em>*</em> (to prevent spam)</label>
 								  <input required id="question" name="question" type="number" placeholder="What number is half of 10 ?">
 								  <small class="error">Please enter a number</small>
@@ -120,15 +120,13 @@
 						  <li class="box-shadow"><a href="band.html"><img src="images/thumbs/tyson_2_74.png" alt="F5 Band pic" width="74" /></a></li>
 					  </ul>
 				  </div>
-				  <div class="small-4 columns footer-row-2">
-					  
-					  
+				  <div class="large-4 medium-4 small-5 columns footer-row-2">
 					  <ul>
 						  <li><h6>BAND MEMBERS</h6></li>
 						  <li><a href="band.html"><img src="images/thumbs/band_mock_sm3_125.png" width="125"/></a></li>
 						  <li><a href="band.html">MEET THE BAND</a></li>
 						  <li><a href="#">BOOKING</a></li>
-						  <li class="social-icon"><a href="index.html"><img src="images/logo/logo_8_40.png" /> HOME</a></li>
+						  <li class="social-icon"><a href="index.html">HOME <img src="images/logo/logo_8_40.png" /></a></li>
 					  </ul>
 				  </div>
 				  <div class="large-4 small-3 columns footer-row-3">
@@ -186,7 +184,7 @@
 			function showFormResult(data) {
 				//alert(data);
 				$('#success').show().empty().append(data);
-				$('#success').delay(5000).slideUp(800);
+				$('#success').delay(8000).slideUp(1000);
 				//emptyForm('#contact_form');
 			}
 	  	})
