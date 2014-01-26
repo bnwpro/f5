@@ -13,7 +13,7 @@
 .bio-pic-right {
 	float: right;
 	height: 225px;
-	margin-left: 10px;
+	margin: 10px 0 0 10px;
 }
 .bio p {
 	font-size: large;
