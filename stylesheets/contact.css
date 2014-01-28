@@ -11,6 +11,10 @@
   -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
  }
 }
+.contact {
+	background: #111;
+	padding: 5px;
+}
 #contact_form input[type="text"]:focus, textarea:focus {
    -webkit-animation: pulse 1.5s infinite ease-in-out;
 }
