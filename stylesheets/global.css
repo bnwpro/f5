@@ -74,6 +74,9 @@ video {
 .footer-row-1 img {
 	width: 73px;
 }
+.footer-row-2 li {
+	display: block;
+}
 .social-icon img {
 	min-width: 24px !important;
 }
