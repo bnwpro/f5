@@ -80,6 +80,10 @@ video {
 .social-icon img {
 	min-width: 24px !important;
 }
+.main-footer a.red {
+	color: red;
+	font-weight: bold;
+}
 .dev-credit {
 	bottom: 0;
 	width: 100%;
